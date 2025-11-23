@@ -9,7 +9,9 @@ convert-to-svg -i <filename.xxx>
 
 **Example**
 ```
-convert-to-svg -i xxx.jpg -o yyy.svg \
+convert-to-svg -i xxx.jpg \
+    -o yyy.svg \
+    --color-mode color
     --color-precision 255 \
     --path-precision 20 \
     --filter-speckle 0 \
@@ -17,7 +19,8 @@ convert-to-svg -i xxx.jpg -o yyy.svg \
     --layer-difference 1 \
     --length-threshold 0.0 \
     --splice-threshold 0 \
-    --max-iterations 100
+    --max-iterations 100 \
+    --mode none
 ```
 
 ## Parameters
